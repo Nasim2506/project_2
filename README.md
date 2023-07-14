@@ -3,26 +3,27 @@
 ## Краткое описание
  В ходе работы исследовал рынок вакансий в частности на позицию Data-Science 
  ### Для работы были использованы данные базы данных "project_sql",состоящая из 5 таблиц :
- * VACANCIES
+ * VACANCIES. Таблица хранит в себе данные по вакансиям
 ![](https://lms-cdn.skillfactory.ru/assets/courseware/v1/837cf6ff79f483e387a16c993634f3e4/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/SQL_pj2_2_2.png)
 
- * [Датасет с курсами валют](https://drive.google.com/file/d/1Zoc-0VuJl2egBjvrTjcsTOXEAYWpFSoe/view?usp=drive_link) 
+ * AREAS. Таблица-справочник, которая хранит код города и его название.
+![](https://lms-cdn.skillfactory.ru/assets/courseware/v1/682c2306f3d46a25915a89d4ec7e16ed/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/SQL_pj2_2_3.png)
 
- ## Описание данных
- Датасет состоит из 44744 строк и 12 столбцов.
-Тип данных у всех столбцов являеся "object". В трех столбцах имеются пропущенные значения, больше всего в столбце "Опыт работы"  - 168 пропущенных значений, у остальных : "Последнее/нынешнее место работы" - 1 пропущенное значение, "Последняя/нынешняя должность" - 2 пропущенных значения.
+* EMPLOYERS. Таблица-справочник со списком работодателей.
+![](https://lms-cdn.skillfactory.ru/assets/courseware/v1/d2a26db623c75572c71923b57241e038/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/SQL_pj2_2_4.png)
+
+* INDUSTRIES. Таблица-справочник вариантов сфер деятельности работодателей.
+![](https://lms-cdn.skillfactory.ru/assets/courseware/v1/2c76bca09937a1a05a9e66d51008e298/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/SQL_pj2_2_5.png)
+
+* EMPLOYERS_INDUSTRIES. Дополнительная таблица, которая существует для организации связи между работодателями и сферами их деятельности.
+![](https://lms-cdn.skillfactory.ru/assets/courseware/v1/16ff3df0bb0ddecd922562f3c4bdd32c/asset-v1:SkillFactory+DST-3.0+28FEB2021+type@asset+block/SQL_pj2_2_6.png)
 
 ## Инстументы использованные в работе
 
-### В процессе работы применил библиотеки Python: 
-* numpy 
-* pandas 
-### Для построения графиков применил: 
-* plotly.express 
-* seaborn
+### В процессе работы применил запросы PostgreSQL, а также Python
+### Для построения графиков применил библиотеку seaborn
+
 
 ## Результат работы
 
-Датасет был очищен от дубликатов, выбросов, а также пропущенных значений
-
-## Работа с графиками Plotly вы можете увидеть на сайте [nbviewer](https://nbviewer.org/github/Nasim2506/project_1/blob/main/Project-1._Ноутбук-шаблон.ipynb)
+В работе были сделаны выводы относительно рынка труда в России в общем, и в частности, касаемо Data-Science 
